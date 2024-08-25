@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .confirmation-container {
+            margin-top: 50px;
+        }
+        .confirmation-box {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .confirmation-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center; /* Center the text */
+        }
+        .confirmation-message {
+            font-size: 18px;
+        }
+        .avatar-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .avatar-symbol {
+            font-size: 48px;
+            font-weight: bold;
+            color: #00cc00; /* Green color */
+            background-color: #f0f0f0;
+            border-radius: 50%;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container confirmation-container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="avatar-container">
+                    <div class="avatar-symbol">
+                        &#10003;
+                    </div>
+                </div>
+                <div class="confirmation-box">
+                    <h2 class="confirmation-title text-center">Appointment Confirmed<br>One of our patient representatives will check the availability of the doctor and will confirm the appointment with you shortly.
+                    </h2>
+                    <p class="confirmation-message">
+                        <?php
+                            $message = $_GET['message'];
+                            echo $message;
+                        ?>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+                       

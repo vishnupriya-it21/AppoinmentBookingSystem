@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/datepicker.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <div class="inner-layer">
+        <div class="container">
+            <div class="row no-margin">
+                <div class="col-sm-7">
+                    <div class="content">
+                        <h1>Book Your Slot Now and Save Your Time</h1>
+                        <p>Save time and streamline your appointments with our easy online booking. Choose your date, provide your details, and secure your spot in seconds. Modern healthcare made simple.</p>
+                        <h2>For Help Call: +189-123-453</h2>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="form-data">
+                        <div class="form-head">
+                            <h2>Book Appointment</h2>
+                        </div>
+                        <div class="form-body">
+                                 
+                                <form id="appointment-form" action="/submit-appointment" method="POST">
+                                <div class="row form-row">
+                                    <div class="col-sm-12">
+                                        <input type="text" name="full_name" placeholder="Enter Full Name" class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="row form-row">
+                                    <div class="col-sm-12">
+                                        <input type="number" name="mobile_number" placeholder="Enter Mobile Number" class="form-control" pattern="[0-9]{10}" title="Please enter a valid 10-digit mobile number" required>
+                                    </div>
+                                </div>
+                                <div class="row form-row">
+                                    <div class="col-sm-12">
+                                        <input type="email" name="email" placeholder="Enter Email Address" class="form-control" required>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="row form-row">
+                                    <div class="col-sm-12">
+                                        <input id="dat" type="number" name="appointment_date" placeholder="Appointment Date" class="form-control" required>
+
+                                    
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                                <h6>Address Details</h6>
+                                <div class="row form-row">
+                                    <div class="col-sm-6">
+                                        <input type="text" name="area" placeholder="Enter Area" class="form-control" required>
+                                       
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="text" name="city" placeholder="Enter City" class="form-control" required>
+                                        
+                                    </div>
+                                </div>
+                                <div class="row form-row">
+                                    <div class="col-sm-6">
+                                        <input type="text" name="state" placeholder="Enter State" class="form-control" required>
+                                        
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="number" name="postal_code" placeholder="Postal Code" class="form-control" pattern="[0-9]{6}" title="Please enter a valid 6-digit postal code" required>
+
+                                    
+                                        
+                                    </div>
+                                </div>
+                                <div class="row form-row">
+                                    <div class="col-sm-12">
+                                        <button class="btn btn-success btn-appointment" type="submit">Book Appointment</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-datepicker.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#dat").datepicker();
+        });
+    </script>
+    <script src="C:/Users/User/Desktop/bitsh/hospital_online_appointment/static/js/bootstrap-datepicker.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#dat").datepicker({
+                format: 'dd/mm/yyyy',  // Specify the desired date format
+                autoclose: true,       // Close the date picker after selecting a date
+                startView: 'days',     // Display day, month, and year inputs
+                minViewMode: 'days'    // Display day, month, and year inputs
+            });
+        });
+    </script>
+</body>
+</html>
